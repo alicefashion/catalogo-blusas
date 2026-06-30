@@ -1,0 +1,63 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.produto {
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.produto:hover {
+  transform: translateY(-3px);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.modelo {
+  font-size: 16px;
+  margin: 8px 0 4px;
+  font-weight: bold;
+  color: #111;
+}
+
+.preco {
+  font-size: 18px;
+  margin: 6px 0;
+  color: #000;
+}
+
+.info {
+  font-size: 13px;
+  margin: 2px 0;
+  color: #666;
+}
+
+.produto a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.produto a:hover {
+  background: #1ebe5d;
+}
+
