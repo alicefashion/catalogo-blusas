@@ -61,3 +61,11 @@
   background: #1ebe5d;
 }
 
+h1 {
+  width: 100%;
+  text-align: center;
+  margin: 25px 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
