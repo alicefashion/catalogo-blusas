@@ -12,7 +12,7 @@
   <div class="grid">
 
  <div class="produto">
-  <img src="imagens/modelo130.jfif" alt="Modelo 130">
+  <img src="imagens/modelo130.jfif" alt="Modelo 130" onclick="abrirImagem(this.src)">>
 
   <h3 class="modelo">Modelo 130</h3>
 
@@ -27,7 +27,7 @@
 </div>
 
     <div class="produto">
-  <img src="imagens/modelo009.jfif" alt="Modelo 009">
+  <img src="imagens/modelo009.jfif" alt="Modelo 009" onclick="abrirImagem(this.src)">>
 
   <h3 class="modelo">Modelo 009</h3>
 
@@ -39,9 +39,24 @@
   <a href="https://wa.me/5581993790589?text=Olá,%20tenho%20interesse%20no%20Modelo%20009" target="_blank">
     Comprar no WhatsApp
   </a>
-</div>
+</div>   </div>
 
+  <!-- MODAL DA IMAGEM -->
+  <div id="modal" onclick="fecharImagem()">
+    <img id="modal-img">
   </div>
+
+  <script>
+    function abrirImagem(src) {
+      document.getElementById('modal').style.display = 'flex';
+      document.getElementById('modal-img').src = src;
+    }
+
+    function fecharImagem() {
+      document.getElementById('modal').style.display = 'none';
+    }
+  </script>
 
 </body>
 </html>
+
